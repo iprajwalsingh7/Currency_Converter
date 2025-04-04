@@ -20,7 +20,7 @@ public class Currency_Converter extends JFrame {
         setTitle("Currency Converter");
         setLayout(new BorderLayout());
         
-        // Main panel with custom background
+        
         JPanel mainPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
@@ -40,7 +40,7 @@ public class Currency_Converter extends JFrame {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.insets = new Insets(10, 10, 10, 10);
 
-        // Amount
+        
         gbc.gridx = 0;
         gbc.gridy = 0;
         amountLabel = new JLabel("Amount:");
@@ -57,7 +57,7 @@ public class Currency_Converter extends JFrame {
         ));
         mainPanel.add(amountField, gbc);
 
-        // From currency
+        
         gbc.gridx = 0;
         gbc.gridy = 1;
         fromLabel = new JLabel("From:");
@@ -71,7 +71,7 @@ public class Currency_Converter extends JFrame {
         fromComboBox.setBackground(Color.WHITE);
         mainPanel.add(fromComboBox, gbc);
 
-        // To currency
+        
         gbc.gridx = 0;
         gbc.gridy = 2;
         toLabel = new JLabel("To:");
@@ -85,7 +85,7 @@ public class Currency_Converter extends JFrame {
         toComboBox.setBackground(Color.WHITE);
         mainPanel.add(toComboBox, gbc);
 
-        // Convert button
+        
         gbc.gridx = 0;
         gbc.gridy = 3;
         gbc.gridwidth = 2;
